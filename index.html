@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <section class="container">
+      <section class="content">
+        <header class="header">
+          <time>
+            <section class="hour">12:42</section>
+            <section class="date">23 فرودین 1401</section>
+          </time>
+
+          <section class="user">
+            <a href=""><img src="image/Mask Group 8.png" alt="" /></a>
+            <a href=""><img src="image/Mask Group 7.png" alt="" /></a>
+            <section>
+              <section class="name">علیرضا حسنی</section>
+              <section class="id">ID:4747</section>
+            </section>
+          </section>
+        </header>
+        <main class="main">
+          <section class="product-title">
+            <img class="clock-img"  src="image/Mask Group 39.png" alt="" />
+
+            <section class="pname-sec">
+              <section>
+                <section class="product-name-fa iranYekanBold">دستگاه کشش راد مس</section>
+                <section class="product-name-en">RAD COPPER EXTRUDER</section>
+              </section>
+              <img src="" alt="" />
+            </section>
+          </section>
+          <section class="summary">
+            <button class="button-red-big celander">
+              <img src="image/Mask Group 43.png" alt="" />
+            </button>
+            <div class="vr"></div>
+            <section class="css-13">
+              <p style="display: flex; justify-content: space-between">
+                <span>12m/s</span>
+                <span>آستانه توقف</span>
+              </p>
+              <p style="display: flex; justify-content: space-between">
+                <span>3</span>
+                <span>مقیاس</span>
+              </p>
+            </section>
+            <div class="vr"></div>
+            <section class="css-13">
+              <p style="display: flex; justify-content: space-between">
+                <span>12m/s</span>
+                <span>آستانه بهینه</span>
+              </p>
+              <p style="display: flex; justify-content: space-between">
+                <span>12m/s</span>
+                <span>آستانه کارد کرد</span>
+              </p>
+              <p style="display: flex; justify-content: space-between">
+                <span>m/s</span>
+                <span>واحد</span>
+              </p>
+            </section>
+            <div class="vr"></div>
+            <section class="css-12">
+              <section class="button-gray">S1</section>
+              <section class="button-gray">S2</section>
+            </section>
+            <div class="vr"></div>
+            <section class="css-4">
+              <section>
+                <p class="current-active">active</p>
+                <p class="current-overload">overload</p>
+              </section>
+              <section>
+                <p>وضعیت کنونی</p>
+                <p>وضعیت بار</p>
+              </section>
+              <section>
+                <section class="css-9">
+                  <section class="css-10"></section>
+                  <span class="css-11">85%</span>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section class="css-1 css-5">
+            <section class="d-flex justify-between">
+              <section class="d-flex">
+                <section style="position: relative">
+                  <select name="cars" id="cars">
+                    <option value="volvo">24 Hours</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <div class="label" for="cars">Timeline</div>
+                </section>
+                <section style="position: relative">
+                  <select name="cars" id="cars">
+                    <option value="volvo">Numerical</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <div class="label" for="cars">Value Type</div>
+                </section>
+              </section>
+              <section>
+                <section class="sec-titleFa">نمودار لحظه ای</section>
+                <section class="sec-titleEn">TIME CHART</section>
+              </section>
+            </section>
+            <section class="css-8">
+              <canvas id="myChart"></canvas>
+            </section>
+          </section>
+          <section class="css-2">
+            <section class="css-6">
+              <section>
+                <button class="css-123456">LAST MONTH</button>
+                <button class="css-123456">LAST WEEK</button>
+                <button class="css-123456">LAST DAY</button>
+                <button class="css-123456">LAST 12 HOUR</button>
+                <button class="css-123456">LAST HOUR</button>
+              </section>
+              <section>
+                <progress class="uptime" min="0" max="100" value="62">
+                  62%
+                </progress>
+              </section>
+            </section>
+            <section style="width: 20%; text-align: right">
+              <h3 style="font-size: 22px">زمانبندی فعالیت دستگاه</h3>
+              <p style="font-size: 9px; text-align: end">DEVICE TIMELINE</p>
+            </section>
+          </section>
+          <section class="css-3">
+            <section>
+              <section style="display: flex; justify-content: space-between">
+                <section class="d-flex">
+                  <section style="position: relative">
+                    <select name="cars" id="cars">
+                      <option value="volvo">26-05-1401</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <div class="label" for="cars">Begin Time</div>
+                  </section>
+                  <section style="position: relative">
+                    <select name="cars" id="cars">
+                      <option value="volvo">26-05-1401</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <div class="label" for="cars">End Time</div>
+                  </section>
+                  <button class="button-blue">
+                    <img src="image/Mask Group 35.png" alt="" />
+                  </button>
+                  <button class="button-red">
+                    <img src="image/Mask Group 36.png" alt="" />
+                  </button>
+                  <button class="button-black">
+                    <img src="image/Mask Group 37.png" alt="" />
+                  </button>
+                </section>
+                <section>
+                  <h4>سفارشی</h4>
+                  <p>CUSTOMIZED CHART</p>
+                </section>
+              </section>
+            </section>
+            <section class="css-7">
+              <div class="year-stats">
+                <div class="month-group">
+                  <div class="bar h-100"></div>
+                  <p class="month">Jan</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-50"></div>
+                  <p class="month">Feb</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-75"></div>
+                  <p class="month">Mar</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Apr</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-100"></div>
+                  <p class="month">May</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-50"></div>
+                  <p class="month">Jun</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-75"></div>
+                  <p class="month">Jul</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Aug</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-50"></div>
+                  <p class="month">Sep</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-75"></div>
+                  <p class="month">Oct</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Nov</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-100"></div>
+                  <p class="month">Dez</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Apr</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-100"></div>
+                  <p class="month">May</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-50"></div>
+                  <p class="month">Jun</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-75"></div>
+                  <p class="month">Jul</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Aug</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-50"></div>
+                  <p class="month">Sep</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-75"></div>
+                  <p class="month">Oct</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-25"></div>
+                  <p class="month">Nov</p>
+                </div>
+                <div class="month-group">
+                  <div class="bar h-100"></div>
+                  <p class="month">Dez</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </main>
+      </section>
+      <aside class="aside">
+        <img class="logo" src="image/Group 210.png" alt="" />
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href=""><img src="image/Mask Group 1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Mask Group 11.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Mask Group 2.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="image/Mask Group 3.png" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </section>
+  </body>
+</html>
+
+<script src="script.js"></script>

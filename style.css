@@ -1,0 +1,512 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  outline: none;
+  border: none;
+}
+html,
+body {
+  width: 100%;
+  background-color: var(--pageBgColor);
+
+  font-family: 'IRANyekan', 'Montserrat';
+  
+}
+
+img {
+  font-family: unset;
+}
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 120rem;
+  padding: 37px 29px 0;
+  margin: auto;
+}
+.content {
+  width: 95%;
+  max-width: 1719px;
+  padding: 6px 49px 0 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.hour {
+  font-size: 30px;
+  font-family: "Montserrat";
+}
+.date {
+  font-size: 16px;
+  font-family: "IRANyekanFN";
+  direction: rtl;
+}
+.user {
+  display: flex;
+  align-items: flex-end;
+}
+.user > * {
+  padding-right: 15px;
+}
+.name {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+  font-family: "IRANyekan";
+}
+.id {
+  background-color: #6792ff10;
+  color: #002070;
+  border-radius: 2px;
+  padding: 0 37px;
+  font-size: 12px;
+}
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.pname-sec {
+  display: flex;
+}
+.product-name-fa {
+  font-size: 40px;
+}
+.product-name-en {
+  font-size: 16px;
+  text-align: right;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 165px;
+  background: white;
+  border-radius: 30px;
+  padding: 0 35px 0 55px;
+  margin-bottom: 23px;
+  font-size: 18px;
+  filter: drop-shadow(#00000016 0px 15px 30px);
+}
+.celander {
+  padding: 9px 9px 5px 9px;
+}
+.button-red-big {
+  min-width: 50px;
+  min-height: 50px;
+  border: 1px solid #ee3552;
+  background-color: #ee355205;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.button-red {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ee3552;
+  background-color: #ee355205;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.button-blue {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #002070;
+  background-color: #00207005;
+  border-radius: 8px;
+  margin-right: 3px;
+}
+.button-black {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+  background-color: #00000005;
+  border-radius: 8px;
+  margin-left: 3px;
+}
+.button-gray {
+  width: 54px;
+  height: 54px;
+  background-color: #f2f3f8;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  font-size: 40px;
+}
+.button-gray:hover
+{
+  color: #002070;
+}
+.current-active {
+  padding: 3px 37px;
+  border-radius: 2px;
+  color: #32cad5;
+  background-color: #32cad505;
+  margin-bottom: 9px;
+}
+.current-active::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-color: #69b6d5;
+}
+.current-overload {
+  padding: 3px 37px;
+  border-radius: 2px;
+  color: #ee3552;
+  background-color: #ee355205;
+}
+.vr {
+  width: 1px;
+  height: 113px;
+  margin: 0 32px;
+  background-color: #cbcbcb;
+}
+.aside {
+  width: 5%;
+  min-width: 94px;
+  max-height: 1011px;
+  border-radius: 15px;
+  background-color: var(--asideBgColor);
+  filter: drop-shadow(rgb(0, 32, 112) 0px 15px 30px);
+  padding: 29px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffc20e;
+}
+.nav {
+  height: 100%;
+  width: 100%;
+}
+.nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav li {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.nav li:hover::after,
+.nav li:focus-within::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+.css-1 {
+  height: 559px;
+  background: white;
+  padding: 63px;
+  border-radius: 30px;
+  margin-bottom: 41px;
+}
+.sec-titleFa {
+  font-size: 24px;
+}
+.sec-titleEn {
+  font-size: 12px;
+  text-align: end;
+}
+.css-2 {
+  display: flex;
+  align-items: end;
+  padding: 34px;
+  background: white;
+  border-radius: 30px;
+  margin-bottom: 41px;
+  filter: drop-shadow(#00000016 0px 15px 30px);
+}
+.css-3 {
+  padding: 31px;
+  height: 559px;
+  background: white;
+  border-radius: 30px;
+  filter: drop-shadow(#00000016 0px 15px 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.css-123456 {
+  width: 170px;
+  height: 32px;
+  background: #f5f5f5;
+  border: none;
+}
+.css-123456:hover {
+  background: #002070;
+  color: #f5f5f5;
+}
+.css-4 {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+.css-5 {
+  filter: drop-shadow(#00000016 0px 15px 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.css-6 {
+  width: 80%;
+  text-align: end;
+}
+.uptime {
+  
+  position: relative;
+  border: none;
+  height: 38px;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 23px;
+}
+
+.uptime::-moz-progress-bar {
+  border-radius: 15px;
+  background: lightcolor;
+}
+
+.uptime::-webkit-progress-value {
+  border-radius: 15px;
+  background: #32cad5;
+  filter: drop-shadow(#32cad550 0px 15px 30px);
+}
+
+.uptime::before {
+  content: '62%';
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: '.iranYekanBold';
+  z-index: 1;
+  font-size: 24px;
+}
+
+.uptime::-webkit-progress-bar {
+  border-radius: 15px;
+  background: #efefef;
+}
+select {
+  padding: 8px 216px 11px 20px;
+  font-size: 22px;
+  margin-right: 20px;
+  border-color: #c1c1c1;
+  border-radius: 5px;
+}
+.label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  padding: 0 24px 0 11px;
+  transform: translate(0, -60%);
+  background-color: white;
+  line-height: 100%;
+  font-size: 15px;
+  color: #c1c1c1;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.year-stats {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding-left: 50px;
+  overflow: hidden;
+}
+
+.year-stats:hover {
+  overflow-x: auto;
+}
+
+/* SCROLL BAR STYLE (ONLY WORKS IN CHROME) */
+/* Width */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 100%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #444e80;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #abafc6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5397d6;
+}
+
+.month-group {
+  cursor: pointer;
+  max-width: 400px;
+  margin: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  background-color: #32cad5;
+  width: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.css-7 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.month-group:hover .bar,
+.selected .bar {
+  background: #5397d6;
+}
+
+.month-group:hover p,
+.selected p {
+  color: #fff;
+}
+
+.h-25 {
+  height: 25%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-100 {
+  height: 344px;
+  background-color: #ee3552;
+}
+:root {
+  --pageBgColor: #f8fafb;
+  --asideBgColor: #002070;
+  font-family: "IRANyekan", "Montserrat";
+}
+
+#myChart {
+  width: 100%;
+  max-height: 300px;
+}
+
+.css-8 {
+  color: #32cad5;
+}
+
+.css-9 {
+  margin-left: 20px;
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.css-10 {
+  width: 100vw;
+  height: 100vw;
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  background: conic-gradient(#ee3552 85%, transparent 0);
+  filter: drop-shadow(0px 0px 10px #ee3552);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: flex;
+}
+
+.css-11 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ee3552;
+}
+
+.css-12 {
+  display: flex;
+  justify-content: center;
+}
+
+.css-13 {
+  flex: 1;
+}
+
+.clock-img
+{
+    object-fit: contain;
+}
+
+.iranYekan
+{font-family: 'IRANyekan';}
+.iranYekanBold
+{font-family: 'IRANYekanBold';}
+
+.montserrat
+{font-family: 'Montserrat';}
+
+@font-face {
+  font-family: IRANyekan;
+  src: url("font/iranyekan/IRANYekanRegular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("font/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: IRANyekanFN;
+  src: url("font/iranyekan/IRANYekanThin.ttf");
+}
+
+@font-face {
+  font-family: IRANyekanBold;
+  src: url("font/iranyekan/IRANYekanBold.ttf");
+}
