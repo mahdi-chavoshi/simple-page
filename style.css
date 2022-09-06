@@ -18,6 +18,7 @@ body {
 
 img {
   font-family: unset;
+  object-fit: contain;
 }
 .container {
   display: flex;
