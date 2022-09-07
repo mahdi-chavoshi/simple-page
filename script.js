@@ -59,15 +59,14 @@ const config = {
     scales: {
       x: {
         grid: {
-          display: false,
-          drawBorder: false,
           color: "white",
-          drawOnChartArea: true,
-          drawTicks: false,
         },
         display: true,
       },
       y: {
+        grid: {
+          drawBorder: false,
+        },
         min: 0,
         max: 750,
         ticks: {
